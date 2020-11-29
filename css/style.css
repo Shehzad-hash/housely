@@ -1,0 +1,513 @@
+@font-face {
+    font-family: "TahomaRegular";
+    src: url("../fonts/TahomaRegular.ttf");
+}
+
+:root {
+    --secondaryCOlor: #FFFFFF;
+    --primaryColor: #5D83FD;
+    --themeColor: #1461D2;
+}
+
+body {
+    font-size: 1em;
+    font-family: "TahomaRegular";
+}
+
+/* Hero Section */
+.heroSection {
+    background-image: url('../img/hero-section-img.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    color: var(--secondaryCOlor);
+}
+
+.heroSection .darkOverlay {
+    background-color: rgba(20, 97, 210, 0.2);
+    min-height: 100vh;
+
+}
+
+.heroSection .navbar-light .nav-link {
+    color: var(--secondaryCOlor);
+    text-transform: uppercase;
+    font-size: 0.9em;
+    font-weight: 600;
+    margin-left: 1.5em;
+}
+
+.heroSection .navbar-brand {
+    color: var(--secondaryCOlor);
+}
+
+.heroSection .navbar-light .nav-link:hover {
+    color: var(--secondaryCOlor);
+}
+
+.radiusBtn {
+    background-color: var(--themeColor);
+    color: var(--secondaryCOlor);
+    padding: 0.6em 1.5em !important;
+    display: inline-block;
+    border-radius: 30px;
+    border: 1px solid var(--themeColor);
+    transition: 200ms ease-in-out;
+}
+
+.radiusBtn:hover {
+    transform: scale(0.98);
+}
+
+.radiusBtn.transparentBtn {
+    background-color: transparent;
+    border: 1px solid var(--secondaryCOlor);
+}
+
+.heroSection .imgFlag {
+    vertical-align: sub;
+    margin-right: 0.6em;
+}
+
+.mainHeading {
+    font-size: 2em;
+}
+
+.mainText {
+    margin: 0.2em 0 1.3em 0;
+}
+
+.heroSection .heroInput {
+    padding: 1em 3.5em;
+    border: none;
+    width: 100%;
+    border-radius: 0.3em;
+    background-color: rgba(255, 255, 255, 0.9);
+    outline: none;
+}
+
+.heroSection .searchArea {
+    position: relative;
+    width: 100%;
+    max-width: 27em;
+}
+
+.searchArea .fa-location-arrow {
+    color: var(--themeColor);
+    position: absolute;
+    left: 25px;
+    top: 16px;
+    font-size: 1.3em;
+}
+
+.searchArea .fa-search {
+    color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    right: 19px;
+    top: 17px;
+    font-size: 1.3em;
+}
+
+.subText {
+    font-size: 0.9em;
+}
+
+.heroSection .popularLink {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: var(--secondaryCOlor);
+    font-size: 0.8em;
+    width: 9.3em;
+    padding: 0.5em 0;
+    display: inline-block;
+    text-align: center;
+    border-radius: 0.2em;
+    text-decoration: none;
+    margin: 1.5em 1em 1em 0;
+}
+
+/* Option Section */
+.optionSection {
+    padding: 2em 0.5em;
+    position: relative;
+}
+
+.mainHeading.underlineHeading::after {
+    content: '';
+    background-color: var(--themeColor);
+    display: block;
+    height: 3px;
+    width: 65px;
+    border-radius: 50px;
+    margin-top: 0.3em;
+}
+
+.optionCard {
+    display: flex;
+    box-shadow: 0px 0px 1px rgba(112, 112, 112, 0.5);
+    border-radius: 0.5em;
+    padding: 0.7em 1.5em;
+    align-items: center;
+    position: relative;
+}
+
+.optionCard .cardImg {
+    height: 130px;
+}
+
+.optionCard .cardHeading {
+    font-size: 1.2em;
+    color: var(--primaryColor);
+}
+
+.optionCard .subText {
+    color: #929292;
+    line-height: 1.2;
+    margin-top: 1em;
+}
+
+.optionCard .radiusBtn {
+    text-decoration: none;
+    color: var(--secondaryCOlor) !important;
+    height: 1.8em;
+    width: 11.7em;
+    line-height: 0.4;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    margin-top: 1em;
+    text-align: center;
+}
+
+.optionCard .imgSide {
+    width: 50%;
+}
+
+.optionCard .contentSide {
+    width: 50%;
+}
+
+.optionCard .circleImg1 {
+    position: absolute;
+    right: -16px;
+    top: -20px;
+}
+
+.optionCard .circleImg2 {
+    position: absolute;
+    right: -16px;
+    bottom: -20px;
+}
+
+.optionCard .circleImg3 {
+    position: absolute;
+    left: -16px;
+    bottom: -20px;
+}
+
+.optionSection .dotsImg {
+    position: absolute;
+    top: 40px;
+    right: 24px;
+}
+
+.getinTouch {
+    box-shadow: 0px 3px 5px rgba(112, 112, 112, 0.5);
+    padding: 2em;
+    border-radius: 0.5em;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.squareBtn {
+    background-color: var(--themeColor);
+    color: var(--secondaryCOlor);
+    padding: 0.5em 1em;
+    border-radius: 0.2em;
+    display: inline-block;
+    text-decoration: none;
+    transition: 200ms ease-in-out;
+    border: 1px solid var(--themeColor);
+}
+
+.squareBtn:hover {
+    border: 1px solid var(--themeColor);
+    background-color: var(--secondaryCOlor);
+    color: var(--themeColor);
+    text-decoration: none;
+}
+
+.getinTouch .subText {
+    color: var(--primaryColor);
+    margin-bottom: 0.8em;
+    font-size: 0.8em;
+}
+
+.getinHeading {
+    font-size: 1.6em;
+    color: black;
+}
+
+.getinTouch .getLeft {
+    width: 70%;
+}
+
+.getinTouch .getRight {
+    width: 30%;
+}
+
+/* Cards Section */
+.cardsSection {
+    padding: 1.5em 0.5em;
+}
+
+.cardImg {
+    position: relative;
+}
+
+.cardImg .radiusBtn {
+    position: absolute;
+    bottom: 24px;
+    right: 30px;
+    background-color: #00DE61;
+    border: none;
+    text-decoration: none;
+    color: var(--secondaryCOlor) !important;
+    padding: 0.5em 0.9em !important;
+    font-size: 0.8em;
+}
+
+.cardsSection .houseCards>.owl-stage-outer>.owl-stage>.owl-item:nth-child(even) .radiusBtn {
+    background-color: #FFBA3F;
+}
+
+.houseCards .mainText {
+    font-size: 1.2em;
+    margin-bottom: 0.7em;
+    color: #414141;
+    margin-top: 0.7em;
+}
+
+.houseCard .cardFooter {
+    margin-left: 0.6em;
+}
+
+.houseCards .subText {
+    color: #A1A1A1;
+    margin-bottom: 0.8em;
+}
+
+.houseCards .houseFacilities {
+    color: var(--primaryColor);
+    font-size: 1.4em;
+    margin-right: 0.3em;
+}
+
+.houseCards .number {
+    color: black;
+    display: inline-block;
+    margin-right: 1.2em;
+
+}
+
+.moreOptions .mainText {
+    font-size: 1.1em;
+    margin-bottom: 0;
+}
+
+.locationCard {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cardsSection .cardItem {
+    position: relative;
+}
+
+.cardsSection .cardOverlay {
+    position: absolute;
+    background-color: rgba(130, 130, 130, 0.4);
+    height: calc(100% - 17px);
+    width: calc(100% - 13px);
+    border-radius: 17px;
+    top: 4px;
+    left: 7px;
+}
+
+.cardsSection .location {
+    position: absolute;
+    top: 26px;
+    left: 32px;
+}
+
+.location i {
+    margin-right: 0.3em;
+}
+
+.location a {
+    color: var(--secondaryCOlor);
+}
+
+.location .mainHeading {
+    color: var(--secondaryCOlor);
+}
+
+.locationCard .exploreMore {
+    position: absolute;
+    bottom: 30px;
+    left: 40px;
+    color: var(--secondaryCOlor);
+    font-size: 0.9em;
+}
+
+/* News Section */
+.newsSection {
+    padding: 2.7em 0.5em;
+}
+
+.newsSection .subText {
+    color: black;
+    line-height: 1.1;
+    margin-top: 0.3em;
+}
+
+.cardFooter .date {
+    color: var(--primaryColor);
+}
+
+.cardFooter .bookmarkIcon {
+    color: #A1A1A1;
+    float: right;
+    margin-right: 1em;
+}
+
+/* Links Section */
+.linksSection {
+    padding: 4em 0.5em;
+    background-color: #969CA2;
+}
+
+.linksSection .label {
+    color: var(--secondaryCOlor);
+    font-size: 0.9em;
+    margin-right: 3em;
+    cursor: pointer;
+}
+
+.linksSection .label.active {
+    border-bottom: 2px solid #116BEE;
+    padding-bottom: 1.2em;
+}
+
+.linksSection .labels {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    padding-bottom: 1.2em;
+}
+
+.linksSection .placeLink {
+    display: block;
+    text-decoration: none;
+    color: var(--secondaryCOlor);
+    font-size: 0.9em;
+    margin-bottom: 1.7em;
+}
+
+.linksSection .squareBtn {
+    font-size: 0.8em;
+}
+
+/* Page Footer */
+.pageFooter {
+    padding: 1em 0.5em;
+    background-color: #000000;
+}
+
+.pageFooter .footerLogo {
+    color: var(--secondaryCOlor);
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+.pageFooter .footerLink {
+    color: var(--secondaryCOlor);
+    text-decoration: none;
+    font-size: 0.9em;
+    margin-right: 1.7em;
+    display: inline-block
+}
+
+.pageFooter .footerHeader {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 1em;
+}
+
+.pageFooter .subText {
+    color: var(--secondaryCOlor);
+    line-height: 1.2;
+    font-size: 0.8em;
+}
+
+.pageFooter .sitename {
+    color: var(--themeColor);
+    font-size: 0.8em;
+    margin-right: 0.2em;
+}
+
+.pageFooter .siteLink {
+    color: var(--secondaryCOlor);
+    font-size: 0.8em;
+    text-decoration: none;
+    margin-right: 1.2em;
+    display: inline-block;
+}
+
+.pageFooter .socialLink {
+    color: #AACCFF;
+    font-size: 1.6em;
+    margin-right: 0.8em;
+    text-decoration: none;
+}
+
+.pageFooter .copyRight {
+    font-size: 0.8em;
+    color: var(--secondaryCOlor);
+    margin-top: 3.5em;
+    line-height: 1.2;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .locationCard {
+        flex-wrap: wrap;
+    }
+
+    .getinTouch .getLeft,
+    .getinTouch .getRight {
+        display: block;
+        width: 100%;
+    }
+
+    .getinTouch {
+        flex-wrap: wrap;
+    }
+
+    .getinTouch .getRight {
+        margin-top: 1em;
+    }
+
+    .linksSection .label {
+        display: block;
+        margin-bottom: 1em;
+    }
+
+    .pageFooter .footerLink,
+    .pageFooter .siteLink {
+        margin-bottom: 0.5em;
+    }
+
+    .optionSection .dotsImg {
+        height: 55px;
+        top: 12px;
+        right: 5px;
+    }
+}
