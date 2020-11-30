@@ -8,9 +8,10 @@
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/owl.theme.default.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/owl.carousel.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.css">
     <link rel="stylesheet" href="./css/css-reset.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -20,7 +21,7 @@
     <section class="heroSection">
         <div class="darkOverlay">
             <!-- Navbar -->
-            <div class="container-fluid">
+            <div class="container-fluid myCountainer">
                 <nav class="navbar navbar-expand-sm navbar-light">
                     <a class="navbar-brand" href="#">housely</a>
                     <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
@@ -89,39 +90,42 @@
                                     <div class="subText">Find a brilliant home from 100's of options!</div>
                                     <a class="radiusBtn" href="#">explore options</a>
                                 </div>
-                                <img class="circleImg1" src="./img/circle-img1.png" alt="">
+                                <div class="circleImg1 transsectionEffect"></div>
                             </div>
                         </div>
                         <div class="col-md-6 mt-4">
                             <div class="optionCard">
                                 <div class="imgSide">
-                                    <img class="cardImg" src="./img/card-img1.png" alt="">
+                                    <img class="cardImg" src="./img/card-img2.png" alt="">
                                 </div>
                                 <div class="contentSide">
                                     <div class="cardHeading">sell a home</div>
                                     <div class="subText">Bring customers in by listing your home now..</div>
                                     <a class="radiusBtn" href="#">Start Listing</a>
                                 </div>
-                                <img class="circleImg2" src="./img/circle-img2.png" alt="">
+                                <div class="circleImg2 transsectionEffect"></div>
                             </div>
                         </div>
                         <div class="col-md-6 mt-4 mx-auto">
                             <div class="optionCard">
                                 <div class="imgSide">
-                                    <img class="cardImg" src="./img/card-img1.png" alt="">
+                                    <img class="cardImg" src="./img/card-img3.png" alt="">
                                 </div>
                                 <div class="contentSide">
                                     <div class="cardHeading">rent a home</div>
                                     <div class="subText">Instantly rent a vibrant home for your stay..</div>
                                     <a class="radiusBtn" href="#">list for rent</a>
                                 </div>
-                                <img class="circleImg3" src="./img/circle-img3.png" alt="">
+                                <div class="circleImg3 transsectionEffect"></div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 pl-2 mt-5 pl-md-5">
-                    <img class="img-fluid" src="./img/video-img.png" alt="">
+                    <div class="videoImg">
+                        <img class="img-fluid" src="./img/video-img.png" alt="">
+                        <div class="videoIcon transsectionEffect"><i class="fas fa-play"></i></div>
+                    </div>
                 </div>
             </div>
             <img class="dotsImg" src="./img/dots.png" alt="">
@@ -147,7 +151,7 @@
             <h1 class="mainHeading underlineHeading">dream houses from around the world</h1>
             <div class="row mt-5">
                 <div class="col">
-                    <div class="houseCards owl-carousel carousel-theme">
+                    <div class="houseCards owl-carousel owl-theme">
                         <div class="houseCard item">
                             <div class="cardImg">
                                 <img src="./img/house-card1.png" alt="">
@@ -233,28 +237,27 @@
             <div class="row">
                 <div class="col">
                     <div class="locationCard">
-                        <div class="cardItem">
+                        <div class="cardItem bigCard" style="background-image: url('./img/location-card-img1.png');">
                             <div class="cardOverlay"></div>
-                            <img class="img-fluid" src="./img/location-card-img1.png" alt="">
                             <div class="location">
                                 <a href="#"><i class="fas fa-map-marker-alt"></i> Austin, TX</a>
                                 <h1 class="mainHeading">apartments</h1>
                             </div>
                             <a class="exploreMore" href="#">Explore More <i class="fas fa-angle-right"></i></a>
                         </div>
-                        <div>
-                            <div class="cardItem">
+                        <div class="smallCards">
+                            <div class="cardItem smallCard"
+                                style="background-image: url('./img/location-card-img2.png');">
                                 <div class="cardOverlay"></div>
-                                <img class="img-fluid" src="./img/location-card-img2.png" alt="">
                                 <div class="location">
                                     <a href="#"><i class="fas fa-map-marker-alt"></i> Sydney, NSW</a>
                                     <h1 class="mainHeading">offices</h1>
                                 </div>
                                 <a class="exploreMore" href="#">Explore More <i class="fas fa-angle-right"></i></a>
                             </div>
-                            <div class="cardItem">
+                            <div class="cardItem smallCard"
+                                style="background-image: url('./img/location-card-img3.png');">
                                 <div class="cardOverlay"></div>
-                                <img class="img-fluid" src="./img/location-card-img3.png" alt="">
                                 <div class="location">
                                     <a href="#"><i class="fas fa-map-marker-alt"></i> Boston, MA</a>
                                     <h1 class="mainHeading">houses</h1>
@@ -262,28 +265,27 @@
                                 <a class="exploreMore" href="#">Explore More <i class="fas fa-angle-right"></i></a>
                             </div>
                         </div>
-                        <div class="cardItem">
+                        <div class="cardItem bigCard" style="background-image: url('./img/location-card-img4.png');">
                             <div class="cardOverlay"></div>
-                            <img class="img-fluid" src="./img/location-card-img4.png" alt="">
                             <div class="location">
                                 <a href="#"><i class="fas fa-map-marker-alt"></i> Oakland, CA</a>
                                 <h1 class="mainHeading">rooms</h1>
                             </div>
                             <a class="exploreMore" href="#">Explore More <i class="fas fa-angle-right"></i></a>
                         </div>
-                        <div>
-                            <div class="cardItem">
+                        <div class="smallCards">
+                            <div class="cardItem smallCard"
+                                style="background-image: url('./img/location-card-img5.png');">
                                 <div class="cardOverlay"></div>
-                                <img class="img-fluid" src="./img/location-card-img5.png" alt="">
                                 <div class="location">
                                     <a href="#"><i class="fas fa-map-marker-alt"></i> Atlanta, GA</a>
                                     <h1 class="mainHeading">cafe</h1>
                                 </div>
                                 <a class="exploreMore" href="#">Explore More <i class="fas fa-angle-right"></i></a>
                             </div>
-                            <div class="cardItem">
+                            <div class="cardItem smallCard"
+                                style="background-image: url('./img/location-card-img6.png');">
                                 <div class="cardOverlay"></div>
-                                <img class="img-fluid" src="./img/location-card-img6.png" alt="">
                                 <div class="location">
                                     <a href="#"><i class="fas fa-map-marker-alt"></i> Philadelphia, PA</a>
                                     <h1 class="mainHeading">grany houses</h1>
@@ -303,7 +305,7 @@
             <h1 class="mainHeading underlineHeading">news & updates </h1>
             <div class="row mt-4">
                 <div class="col">
-                    <div class="houseCards owl-carousel carousel-theme">
+                    <div class="houseCards owl-carousel owl-theme">
                         <div class="houseCard item">
                             <div class="cardImg">
                                 <img src="./img/news-img1.png" alt="">
@@ -374,69 +376,559 @@
     <!-- Links Section -->
     <section class="linksSection">
         <div class="container">
-            <div class="labels">
-                <span class="label active">Real Estate For Sale</span>
-                <span class="label">Houses</span>
-                <span class="label">Apartments & Units</span>
-                <span class="label">New Homes</span>
-                <span class="label">Popular Areas</span>
-                <span class="label">Popular Searches</span>
+            <div class="hideTab">
+                <div class="labels nav nav-tabs" id="myTab" role="tablist">
+                    <a class="label active" id="tab-1" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1"
+                        aria-selected="true">Real Estate For Sale</a>
+                    <a class="label" id="tab-2" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2"
+                        aria-selected="false">Houses</a>
+                    <a class="label" id="tab-3" data-toggle="tab" href="#tab3" role="tab" aria-controls="tab3"
+                        aria-selected="false">Apartments & Units</a>
+                    <a class="label" id="tab-4" data-toggle="tab" href="#tab4" role="tab" aria-controls="tab4"
+                        aria-selected="false">New Homes</a>
+                    <a class="label" id="tab-5" data-toggle="tab" href="#tab5" role="tab" aria-controls="tab5"
+                        aria-selected="false">Popular Areas</a>
+                    <a class="label" id="tab-6" data-toggle="tab" href="#tab6" role="tab" aria-controls="tab6"
+                        aria-selected="false">Popular Searches</a>
+                </div>
+                <!-- Tabs Parent Start -->
+                <div class="tab-content" id="myTabContent">
+                    <!-- Tab 1 -->
+                    <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab-1">
+                        <div class="row mt-5">
+                            <div class="col-md">
+                                <a class="placeLink" href="#">Real Estate in Alaska</a>
+                                <a class="placeLink" href="#">Real Estate in Alabama</a>
+                                <a class="placeLink" href="#">Real Estate in Arizona</a>
+                                <a class="placeLink" href="#">Real Estate in Arkansas</a>
+                                <a class="placeLink" href="#">Real Estate in California</a>
+                                <a class="placeLink" href="#">Real Estate in Colorado</a>
+                                <a class="placeLink" href="#">Real Estate in Connecticut</a>
+                                <a class="placeLink" href="#">Real Estate in Delaware</a>
+                            </div>
+                            <div class="col-md">
+                                <a class="placeLink" href="#">Real Estate in Florida</a>
+                                <a class="placeLink" href="#">Real Estate in Georgia</a>
+                                <a class="placeLink" href="#">Real Estate in Hawaii</a>
+                                <a class="placeLink" href="#">Real Estate in Idaho</a>
+                                <a class="placeLink" href="#">Real Estate in Illinois</a>
+                                <a class="placeLink" href="#">Real Estate in Indiana</a>
+                                <a class="placeLink" href="#">Real Estate in Iowa</a>
+                                <a class="placeLink" href="#">Real Estate in Kansas</a>
+                            </div>
+                            <div class="col-md">
+                                <a class="placeLink" href="#">Real Estate in Kentucky</a>
+                                <a class="placeLink" href="#">Real Estate in Louisiana</a>
+                                <a class="placeLink" href="#">Real Estate in Maine</a>
+                                <a class="placeLink" href="#">Real Estate in Maryland</a>
+                                <a class="placeLink" href="#">Real Estate in Massachusetts</a>
+                                <a class="placeLink" href="#">Real Estate in Michigan</a>
+                                <a class="placeLink" href="#">Real Estate in Minnesota</a>
+                                <a class="placeLink" href="#">Real Estate in Mississippi</a>
+                            </div>
+                            <div class="col-md">
+                                <a class="placeLink" href="#">Real Estate in Missouri</a>
+                                <a class="placeLink" href="#">Real Estate in Montana</a>
+                                <a class="placeLink" href="#">Real Estate in Nebraska</a>
+                                <a class="placeLink" href="#">Real Estate in Nevada</a>
+                                <a class="placeLink" href="#">Real Estate in New Hampshire</a>
+                                <a class="placeLink" href="#">Real Estate in New Jersey</a>
+                                <a class="placeLink" href="#">Real Estate in New Mexico</a>
+                                <a class="placeLink" href="#">Real Estate in New York</a>
+                            </div>
+                            <div class="col-md">
+                                <a class="placeLink" href="#">Real Estate in North Carolina</a>
+                                <a class="placeLink" href="#">Real Estate in Dakota</a>
+                                <a class="placeLink" href="#">Real Estate in Ohio</a>
+                                <a class="placeLink" href="#">Real Estate in Oklahoma</a>
+                                <a class="placeLink" href="#">Real Estate in Oregon</a>
+                                <a class="placeLink" href="#">Real Estate in Pennsylvania</a>
+                                <a class="placeLink" href="#">Real Estate in Rhode Island</a>
+                                <a class="placeLink" href="#">Real Estate in South Carolina</a>
+                                <div class="text-left text-md-right mt-5">
+                                    <a class="squareBtn" href="#">Brows All Together <i
+                                            class="fas fa-angle-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tab 2 -->
+                    <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab-2">
+                        <div class="row mt-5">
+                            <div class="col-md">
+                                <a class="placeLink" href="#">Real Estate in Alaska</a>
+                                <a class="placeLink" href="#">Real Estate in Alabama</a>
+                                <a class="placeLink" href="#">Real Estate in Arizona</a>
+                                <a class="placeLink" href="#">Real Estate in Arkansas</a>
+                                <a class="placeLink" href="#">Real Estate in California</a>
+                                <a class="placeLink" href="#">Real Estate in Colorado</a>
+                                <a class="placeLink" href="#">Real Estate in Connecticut</a>
+                                <a class="placeLink" href="#">Real Estate in Delaware</a>
+                            </div>
+                            <div class="col-md">
+                                <a class="placeLink" href="#">Real Estate in Florida</a>
+                                <a class="placeLink" href="#">Real Estate in Georgia</a>
+                                <a class="placeLink" href="#">Real Estate in Hawaii</a>
+                                <a class="placeLink" href="#">Real Estate in Idaho</a>
+                                <a class="placeLink" href="#">Real Estate in Illinois</a>
+                                <a class="placeLink" href="#">Real Estate in Indiana</a>
+                                <a class="placeLink" href="#">Real Estate in Iowa</a>
+                                <a class="placeLink" href="#">Real Estate in Kansas</a>
+                            </div>
+                            <div class="col-md">
+                                <a class="placeLink" href="#">Real Estate in Kentucky</a>
+                                <a class="placeLink" href="#">Real Estate in Louisiana</a>
+                                <a class="placeLink" href="#">Real Estate in Maine</a>
+                                <a class="placeLink" href="#">Real Estate in Maryland</a>
+                                <a class="placeLink" href="#">Real Estate in Massachusetts</a>
+                                <a class="placeLink" href="#">Real Estate in Michigan</a>
+                                <a class="placeLink" href="#">Real Estate in Minnesota</a>
+                                <a class="placeLink" href="#">Real Estate in Mississippi</a>
+                            </div>
+                            <div class="col-md">
+                                <a class="placeLink" href="#">Real Estate in Missouri</a>
+                                <a class="placeLink" href="#">Real Estate in Montana</a>
+                                <a class="placeLink" href="#">Real Estate in Nebraska</a>
+                                <a class="placeLink" href="#">Real Estate in Nevada</a>
+                                <a class="placeLink" href="#">Real Estate in New Hampshire</a>
+                                <a class="placeLink" href="#">Real Estate in New Jersey</a>
+                                <a class="placeLink" href="#">Real Estate in New Mexico</a>
+                                <a class="placeLink" href="#">Real Estate in New York</a>
+                            </div>
+                            <div class="col-md">
+                                <a class="placeLink" href="#">Real Estate in North Carolina</a>
+                                <a class="placeLink" href="#">Real Estate in Dakota</a>
+                                <a class="placeLink" href="#">Real Estate in Ohio</a>
+                                <a class="placeLink" href="#">Real Estate in Oklahoma</a>
+                                <a class="placeLink" href="#">Real Estate in Oregon</a>
+                                <a class="placeLink" href="#">Real Estate in Pennsylvania</a>
+                                <a class="placeLink" href="#">Real Estate in Rhode Island</a>
+                                <a class="placeLink" href="#">Real Estate in South Carolina</a>
+                                <div class="text-left text-md-right mt-5">
+                                    <a class="squareBtn" href="#">Brows All Together <i
+                                            class="fas fa-angle-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tab 3 -->
+                    <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab-3">
+                        <div class="row mt-5">
+                            <div class="col-md">
+                                <a class="placeLink" href="#">Real Estate in Alaska</a>
+                                <a class="placeLink" href="#">Real Estate in Alabama</a>
+                                <a class="placeLink" href="#">Real Estate in Arizona</a>
+                                <a class="placeLink" href="#">Real Estate in Arkansas</a>
+                                <a class="placeLink" href="#">Real Estate in California</a>
+                                <a class="placeLink" href="#">Real Estate in Colorado</a>
+                                <a class="placeLink" href="#">Real Estate in Connecticut</a>
+                                <a class="placeLink" href="#">Real Estate in Delaware</a>
+                            </div>
+                            <div class="col-md">
+                                <a class="placeLink" href="#">Real Estate in Florida</a>
+                                <a class="placeLink" href="#">Real Estate in Georgia</a>
+                                <a class="placeLink" href="#">Real Estate in Hawaii</a>
+                                <a class="placeLink" href="#">Real Estate in Idaho</a>
+                                <a class="placeLink" href="#">Real Estate in Illinois</a>
+                                <a class="placeLink" href="#">Real Estate in Indiana</a>
+                                <a class="placeLink" href="#">Real Estate in Iowa</a>
+                                <a class="placeLink" href="#">Real Estate in Kansas</a>
+                            </div>
+                            <div class="col-md">
+                                <a class="placeLink" href="#">Real Estate in Kentucky</a>
+                                <a class="placeLink" href="#">Real Estate in Louisiana</a>
+                                <a class="placeLink" href="#">Real Estate in Maine</a>
+                                <a class="placeLink" href="#">Real Estate in Maryland</a>
+                                <a class="placeLink" href="#">Real Estate in Massachusetts</a>
+                                <a class="placeLink" href="#">Real Estate in Michigan</a>
+                                <a class="placeLink" href="#">Real Estate in Minnesota</a>
+                                <a class="placeLink" href="#">Real Estate in Mississippi</a>
+                            </div>
+                            <div class="col-md">
+                                <a class="placeLink" href="#">Real Estate in Missouri</a>
+                                <a class="placeLink" href="#">Real Estate in Montana</a>
+                                <a class="placeLink" href="#">Real Estate in Nebraska</a>
+                                <a class="placeLink" href="#">Real Estate in Nevada</a>
+                                <a class="placeLink" href="#">Real Estate in New Hampshire</a>
+                                <a class="placeLink" href="#">Real Estate in New Jersey</a>
+                                <a class="placeLink" href="#">Real Estate in New Mexico</a>
+                                <a class="placeLink" href="#">Real Estate in New York</a>
+                            </div>
+                            <div class="col-md">
+                                <a class="placeLink" href="#">Real Estate in North Carolina</a>
+                                <a class="placeLink" href="#">Real Estate in Dakota</a>
+                                <a class="placeLink" href="#">Real Estate in Ohio</a>
+                                <a class="placeLink" href="#">Real Estate in Oklahoma</a>
+                                <a class="placeLink" href="#">Real Estate in Oregon</a>
+                                <a class="placeLink" href="#">Real Estate in Pennsylvania</a>
+                                <a class="placeLink" href="#">Real Estate in Rhode Island</a>
+                                <a class="placeLink" href="#">Real Estate in South Carolina</a>
+                                <div class="text-left text-md-right mt-5">
+                                    <a class="squareBtn" href="#">Brows All Together <i
+                                            class="fas fa-angle-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tab 4 -->
+                    <div class="tab-pane fade" id="tab4" role="tabpanel" aria-labelledby="tab-4">
+                        <div class="row mt-5">
+                            <div class="col-md">
+                                <a class="placeLink" href="#">Real Estate in Alaska</a>
+                                <a class="placeLink" href="#">Real Estate in Alabama</a>
+                                <a class="placeLink" href="#">Real Estate in Arizona</a>
+                                <a class="placeLink" href="#">Real Estate in Arkansas</a>
+                                <a class="placeLink" href="#">Real Estate in California</a>
+                                <a class="placeLink" href="#">Real Estate in Colorado</a>
+                                <a class="placeLink" href="#">Real Estate in Connecticut</a>
+                                <a class="placeLink" href="#">Real Estate in Delaware</a>
+                            </div>
+                            <div class="col-md">
+                                <a class="placeLink" href="#">Real Estate in Florida</a>
+                                <a class="placeLink" href="#">Real Estate in Georgia</a>
+                                <a class="placeLink" href="#">Real Estate in Hawaii</a>
+                                <a class="placeLink" href="#">Real Estate in Idaho</a>
+                                <a class="placeLink" href="#">Real Estate in Illinois</a>
+                                <a class="placeLink" href="#">Real Estate in Indiana</a>
+                                <a class="placeLink" href="#">Real Estate in Iowa</a>
+                                <a class="placeLink" href="#">Real Estate in Kansas</a>
+                            </div>
+                            <div class="col-md">
+                                <a class="placeLink" href="#">Real Estate in Kentucky</a>
+                                <a class="placeLink" href="#">Real Estate in Louisiana</a>
+                                <a class="placeLink" href="#">Real Estate in Maine</a>
+                                <a class="placeLink" href="#">Real Estate in Maryland</a>
+                                <a class="placeLink" href="#">Real Estate in Massachusetts</a>
+                                <a class="placeLink" href="#">Real Estate in Michigan</a>
+                                <a class="placeLink" href="#">Real Estate in Minnesota</a>
+                                <a class="placeLink" href="#">Real Estate in Mississippi</a>
+                            </div>
+                            <div class="col-md">
+                                <a class="placeLink" href="#">Real Estate in Missouri</a>
+                                <a class="placeLink" href="#">Real Estate in Montana</a>
+                                <a class="placeLink" href="#">Real Estate in Nebraska</a>
+                                <a class="placeLink" href="#">Real Estate in Nevada</a>
+                                <a class="placeLink" href="#">Real Estate in New Hampshire</a>
+                                <a class="placeLink" href="#">Real Estate in New Jersey</a>
+                                <a class="placeLink" href="#">Real Estate in New Mexico</a>
+                                <a class="placeLink" href="#">Real Estate in New York</a>
+                            </div>
+                            <div class="col-md">
+                                <a class="placeLink" href="#">Real Estate in North Carolina</a>
+                                <a class="placeLink" href="#">Real Estate in Dakota</a>
+                                <a class="placeLink" href="#">Real Estate in Ohio</a>
+                                <a class="placeLink" href="#">Real Estate in Oklahoma</a>
+                                <a class="placeLink" href="#">Real Estate in Oregon</a>
+                                <a class="placeLink" href="#">Real Estate in Pennsylvania</a>
+                                <a class="placeLink" href="#">Real Estate in Rhode Island</a>
+                                <a class="placeLink" href="#">Real Estate in South Carolina</a>
+                                <div class="text-left text-md-right mt-5">
+                                    <a class="squareBtn" href="#">Brows All Together <i
+                                            class="fas fa-angle-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tab 5 -->
+                    <div class="tab-pane fade" id="tab5" role="tabpanel" aria-labelledby="tab-5">
+                        <div class="row mt-5">
+                            <div class="col-md">
+                                <a class="placeLink" href="#">Real Estate in Alaska</a>
+                                <a class="placeLink" href="#">Real Estate in Alabama</a>
+                                <a class="placeLink" href="#">Real Estate in Arizona</a>
+                                <a class="placeLink" href="#">Real Estate in Arkansas</a>
+                                <a class="placeLink" href="#">Real Estate in California</a>
+                                <a class="placeLink" href="#">Real Estate in Colorado</a>
+                                <a class="placeLink" href="#">Real Estate in Connecticut</a>
+                                <a class="placeLink" href="#">Real Estate in Delaware</a>
+                            </div>
+                            <div class="col-md">
+                                <a class="placeLink" href="#">Real Estate in Florida</a>
+                                <a class="placeLink" href="#">Real Estate in Georgia</a>
+                                <a class="placeLink" href="#">Real Estate in Hawaii</a>
+                                <a class="placeLink" href="#">Real Estate in Idaho</a>
+                                <a class="placeLink" href="#">Real Estate in Illinois</a>
+                                <a class="placeLink" href="#">Real Estate in Indiana</a>
+                                <a class="placeLink" href="#">Real Estate in Iowa</a>
+                                <a class="placeLink" href="#">Real Estate in Kansas</a>
+                            </div>
+                            <div class="col-md">
+                                <a class="placeLink" href="#">Real Estate in Kentucky</a>
+                                <a class="placeLink" href="#">Real Estate in Louisiana</a>
+                                <a class="placeLink" href="#">Real Estate in Maine</a>
+                                <a class="placeLink" href="#">Real Estate in Maryland</a>
+                                <a class="placeLink" href="#">Real Estate in Massachusetts</a>
+                                <a class="placeLink" href="#">Real Estate in Michigan</a>
+                                <a class="placeLink" href="#">Real Estate in Minnesota</a>
+                                <a class="placeLink" href="#">Real Estate in Mississippi</a>
+                            </div>
+                            <div class="col-md">
+                                <a class="placeLink" href="#">Real Estate in Missouri</a>
+                                <a class="placeLink" href="#">Real Estate in Montana</a>
+                                <a class="placeLink" href="#">Real Estate in Nebraska</a>
+                                <a class="placeLink" href="#">Real Estate in Nevada</a>
+                                <a class="placeLink" href="#">Real Estate in New Hampshire</a>
+                                <a class="placeLink" href="#">Real Estate in New Jersey</a>
+                                <a class="placeLink" href="#">Real Estate in New Mexico</a>
+                                <a class="placeLink" href="#">Real Estate in New York</a>
+                            </div>
+                            <div class="col-md">
+                                <a class="placeLink" href="#">Real Estate in North Carolina</a>
+                                <a class="placeLink" href="#">Real Estate in Dakota</a>
+                                <a class="placeLink" href="#">Real Estate in Ohio</a>
+                                <a class="placeLink" href="#">Real Estate in Oklahoma</a>
+                                <a class="placeLink" href="#">Real Estate in Oregon</a>
+                                <a class="placeLink" href="#">Real Estate in Pennsylvania</a>
+                                <a class="placeLink" href="#">Real Estate in Rhode Island</a>
+                                <a class="placeLink" href="#">Real Estate in South Carolina</a>
+                                <div class="text-left text-md-right mt-5">
+                                    <a class="squareBtn" href="#">Brows All Together <i
+                                            class="fas fa-angle-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tab 6 -->
+                    <div class="tab-pane fade" id="tab6" role="tabpanel" aria-labelledby="tab-6">
+                        <div class="row mt-5">
+                            <div class="col-md">
+                                <a class="placeLink" href="#">Real Estate in Alaska</a>
+                                <a class="placeLink" href="#">Real Estate in Alabama</a>
+                                <a class="placeLink" href="#">Real Estate in Arizona</a>
+                                <a class="placeLink" href="#">Real Estate in Arkansas</a>
+                                <a class="placeLink" href="#">Real Estate in California</a>
+                                <a class="placeLink" href="#">Real Estate in Colorado</a>
+                                <a class="placeLink" href="#">Real Estate in Connecticut</a>
+                                <a class="placeLink" href="#">Real Estate in Delaware</a>
+                            </div>
+                            <div class="col-md">
+                                <a class="placeLink" href="#">Real Estate in Florida</a>
+                                <a class="placeLink" href="#">Real Estate in Georgia</a>
+                                <a class="placeLink" href="#">Real Estate in Hawaii</a>
+                                <a class="placeLink" href="#">Real Estate in Idaho</a>
+                                <a class="placeLink" href="#">Real Estate in Illinois</a>
+                                <a class="placeLink" href="#">Real Estate in Indiana</a>
+                                <a class="placeLink" href="#">Real Estate in Iowa</a>
+                                <a class="placeLink" href="#">Real Estate in Kansas</a>
+                            </div>
+                            <div class="col-md">
+                                <a class="placeLink" href="#">Real Estate in Kentucky</a>
+                                <a class="placeLink" href="#">Real Estate in Louisiana</a>
+                                <a class="placeLink" href="#">Real Estate in Maine</a>
+                                <a class="placeLink" href="#">Real Estate in Maryland</a>
+                                <a class="placeLink" href="#">Real Estate in Massachusetts</a>
+                                <a class="placeLink" href="#">Real Estate in Michigan</a>
+                                <a class="placeLink" href="#">Real Estate in Minnesota</a>
+                                <a class="placeLink" href="#">Real Estate in Mississippi</a>
+                            </div>
+                            <div class="col-md">
+                                <a class="placeLink" href="#">Real Estate in Missouri</a>
+                                <a class="placeLink" href="#">Real Estate in Montana</a>
+                                <a class="placeLink" href="#">Real Estate in Nebraska</a>
+                                <a class="placeLink" href="#">Real Estate in Nevada</a>
+                                <a class="placeLink" href="#">Real Estate in New Hampshire</a>
+                                <a class="placeLink" href="#">Real Estate in New Jersey</a>
+                                <a class="placeLink" href="#">Real Estate in New Mexico</a>
+                                <a class="placeLink" href="#">Real Estate in New York</a>
+                            </div>
+                            <div class="col-md">
+                                <a class="placeLink" href="#">Real Estate in North Carolina</a>
+                                <a class="placeLink" href="#">Real Estate in Dakota</a>
+                                <a class="placeLink" href="#">Real Estate in Ohio</a>
+                                <a class="placeLink" href="#">Real Estate in Oklahoma</a>
+                                <a class="placeLink" href="#">Real Estate in Oregon</a>
+                                <a class="placeLink" href="#">Real Estate in Pennsylvania</a>
+                                <a class="placeLink" href="#">Real Estate in Rhode Island</a>
+                                <a class="placeLink" href="#">Real Estate in South Carolina</a>
+                                <div class="text-left text-md-right mt-5">
+                                    <a class="squareBtn" href="#">Brows All Together <i
+                                            class="fas fa-angle-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tabs Parent End -->
             </div>
-            <div class="row mt-5">
-                <div class="col-md">
-                    <a class="placeLink" href="#">Real Estate in Alaska</a>
-                    <a class="placeLink" href="#">Real Estate in Alabama</a>
-                    <a class="placeLink" href="#">Real Estate in Arizona</a>
-                    <a class="placeLink" href="#">Real Estate in Arkansas</a>
-                    <a class="placeLink" href="#">Real Estate in California</a>
-                    <a class="placeLink" href="#">Real Estate in Colorado</a>
-                    <a class="placeLink" href="#">Real Estate in Connecticut</a>
-                    <a class="placeLink" href="#">Real Estate in Delaware</a>
+            <!-- Owl Carousel start -->
+            <div id="owl-carousel" class="owl-carousel owl-theme">
+                <div class="item">
+                    <a class="label active" href="#">Real Estate For Sale</a>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a class="placeLink" href="#">Real Estate in Alaska</a>
+                            <a class="placeLink" href="#">Real Estate in Alabama</a>
+                            <a class="placeLink" href="#">Real Estate in Arizona</a>
+                            <a class="placeLink" href="#">Real Estate in Arkansas</a>
+                            <a class="placeLink" href="#">Real Estate in California</a>
+                            <a class="placeLink" href="#">Real Estate in Colorado</a>
+                            <a class="placeLink" href="#">Real Estate in Connecticut</a>
+                            <a class="placeLink" href="#">Real Estate in Delaware</a>
+                        </div>
+                        <div class="col-md-6">
+                            <a class="placeLink" href="#">Real Estate in Florida</a>
+                            <a class="placeLink" href="#">Real Estate in Georgia</a>
+                            <a class="placeLink" href="#">Real Estate in Hawaii</a>
+                            <a class="placeLink" href="#">Real Estate in Idaho</a>
+                            <a class="placeLink" href="#">Real Estate in Illinois</a>
+                            <a class="placeLink" href="#">Real Estate in Indiana</a>
+                            <a class="placeLink" href="#">Real Estate in Iowa</a>
+                            <a class="placeLink" href="#">Real Estate in Kansas</a>
+                        </div>
+                    </div>
+                    <div class="text-left text-md-right">
+                        <a class="squareBtn" href="#">Brows All Together <i
+                                class="fas fa-angle-right"></i></a>
+                    </div>
                 </div>
-                <div class="col-md">
-                    <a class="placeLink" href="#">Real Estate in Florida</a>
-                    <a class="placeLink" href="#">Real Estate in Georgia</a>
-                    <a class="placeLink" href="#">Real Estate in Hawaii</a>
-                    <a class="placeLink" href="#">Real Estate in Idaho</a>
-                    <a class="placeLink" href="#">Real Estate in Illinois</a>
-                    <a class="placeLink" href="#">Real Estate in Indiana</a>
-                    <a class="placeLink" href="#">Real Estate in Iowa</a>
-                    <a class="placeLink" href="#">Real Estate in Kansas</a>
+                <div class="item">
+                    <a class="label active" href="#">Houses</a>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a class="placeLink" href="#">Real Estate in Alaska</a>
+                            <a class="placeLink" href="#">Real Estate in Alabama</a>
+                            <a class="placeLink" href="#">Real Estate in Arizona</a>
+                            <a class="placeLink" href="#">Real Estate in Arkansas</a>
+                            <a class="placeLink" href="#">Real Estate in California</a>
+                            <a class="placeLink" href="#">Real Estate in Colorado</a>
+                            <a class="placeLink" href="#">Real Estate in Connecticut</a>
+                            <a class="placeLink" href="#">Real Estate in Delaware</a>
+                        </div>
+                        <div class="col-md-6">
+                            <a class="placeLink" href="#">Real Estate in Florida</a>
+                            <a class="placeLink" href="#">Real Estate in Georgia</a>
+                            <a class="placeLink" href="#">Real Estate in Hawaii</a>
+                            <a class="placeLink" href="#">Real Estate in Idaho</a>
+                            <a class="placeLink" href="#">Real Estate in Illinois</a>
+                            <a class="placeLink" href="#">Real Estate in Indiana</a>
+                            <a class="placeLink" href="#">Real Estate in Iowa</a>
+                            <a class="placeLink" href="#">Real Estate in Kansas</a>
+                        </div>
+                    </div>
+                    <div class="text-left text-md-right">
+                        <a class="squareBtn" href="#">Brows All Together <i
+                                class="fas fa-angle-right"></i></a>
+                    </div>
                 </div>
-                <div class="col-md">
-                    <a class="placeLink" href="#">Real Estate in Kentucky</a>
-                    <a class="placeLink" href="#">Real Estate in Louisiana</a>
-                    <a class="placeLink" href="#">Real Estate in Maine</a>
-                    <a class="placeLink" href="#">Real Estate in Maryland</a>
-                    <a class="placeLink" href="#">Real Estate in Massachusetts</a>
-                    <a class="placeLink" href="#">Real Estate in Michigan</a>
-                    <a class="placeLink" href="#">Real Estate in Minnesota</a>
-                    <a class="placeLink" href="#">Real Estate in Mississippi</a>
+                <div class="item">
+                    <a class="label active" href="#">Apartments & Units</a>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a class="placeLink" href="#">Real Estate in Alaska</a>
+                            <a class="placeLink" href="#">Real Estate in Alabama</a>
+                            <a class="placeLink" href="#">Real Estate in Arizona</a>
+                            <a class="placeLink" href="#">Real Estate in Arkansas</a>
+                            <a class="placeLink" href="#">Real Estate in California</a>
+                            <a class="placeLink" href="#">Real Estate in Colorado</a>
+                            <a class="placeLink" href="#">Real Estate in Connecticut</a>
+                            <a class="placeLink" href="#">Real Estate in Delaware</a>
+                        </div>
+                        <div class="col-md-6">
+                            <a class="placeLink" href="#">Real Estate in Florida</a>
+                            <a class="placeLink" href="#">Real Estate in Georgia</a>
+                            <a class="placeLink" href="#">Real Estate in Hawaii</a>
+                            <a class="placeLink" href="#">Real Estate in Idaho</a>
+                            <a class="placeLink" href="#">Real Estate in Illinois</a>
+                            <a class="placeLink" href="#">Real Estate in Indiana</a>
+                            <a class="placeLink" href="#">Real Estate in Iowa</a>
+                            <a class="placeLink" href="#">Real Estate in Kansas</a>
+                        </div>
+                    </div>
+                    <div class="text-left text-md-right">
+                        <a class="squareBtn" href="#">Brows All Together <i
+                                class="fas fa-angle-right"></i></a>
+                    </div>
                 </div>
-                <div class="col-md">
-                    <a class="placeLink" href="#">Real Estate in Missouri</a>
-                    <a class="placeLink" href="#">Real Estate in Montana</a>
-                    <a class="placeLink" href="#">Real Estate in Nebraska</a>
-                    <a class="placeLink" href="#">Real Estate in Nevada</a>
-                    <a class="placeLink" href="#">Real Estate in New Hampshire</a>
-                    <a class="placeLink" href="#">Real Estate in New Jersey</a>
-                    <a class="placeLink" href="#">Real Estate in New Mexico</a>
-                    <a class="placeLink" href="#">Real Estate in New York</a>
+                <div class="item">
+                    <a class="label active" href="#">New Homes</a>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a class="placeLink" href="#">Real Estate in Alaska</a>
+                            <a class="placeLink" href="#">Real Estate in Alabama</a>
+                            <a class="placeLink" href="#">Real Estate in Arizona</a>
+                            <a class="placeLink" href="#">Real Estate in Arkansas</a>
+                            <a class="placeLink" href="#">Real Estate in California</a>
+                            <a class="placeLink" href="#">Real Estate in Colorado</a>
+                            <a class="placeLink" href="#">Real Estate in Connecticut</a>
+                            <a class="placeLink" href="#">Real Estate in Delaware</a>
+                        </div>
+                        <div class="col-md-6">
+                            <a class="placeLink" href="#">Real Estate in Florida</a>
+                            <a class="placeLink" href="#">Real Estate in Georgia</a>
+                            <a class="placeLink" href="#">Real Estate in Hawaii</a>
+                            <a class="placeLink" href="#">Real Estate in Idaho</a>
+                            <a class="placeLink" href="#">Real Estate in Illinois</a>
+                            <a class="placeLink" href="#">Real Estate in Indiana</a>
+                            <a class="placeLink" href="#">Real Estate in Iowa</a>
+                            <a class="placeLink" href="#">Real Estate in Kansas</a>
+                        </div>
+                    </div>
+                    <div class="text-left text-md-right">
+                        <a class="squareBtn" href="#">Brows All Together <i
+                                class="fas fa-angle-right"></i></a>
+                    </div>
                 </div>
-                <div class="col-md">
-                    <a class="placeLink" href="#">Real Estate in North Carolina</a>
-                    <a class="placeLink" href="#">Real Estate in Dakota</a>
-                    <a class="placeLink" href="#">Real Estate in Ohio</a>
-                    <a class="placeLink" href="#">Real Estate in Oklahoma</a>
-                    <a class="placeLink" href="#">Real Estate in Oregon</a>
-                    <a class="placeLink" href="#">Real Estate in Pennsylvania</a>
-                    <a class="placeLink" href="#">Real Estate in Rhode Island</a>
-                    <a class="placeLink" href="#">Real Estate in South Carolina</a>
-                    <div class="text-left text-md-right mt-5">
-                        <a class="squareBtn" href="#">Brows All Together <i class="fas fa-angle-right"></i></a>
+                <div class="item">
+                    <a class="label active" href="#">Popular Areas</a>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a class="placeLink" href="#">Real Estate in Alaska</a>
+                            <a class="placeLink" href="#">Real Estate in Alabama</a>
+                            <a class="placeLink" href="#">Real Estate in Arizona</a>
+                            <a class="placeLink" href="#">Real Estate in Arkansas</a>
+                            <a class="placeLink" href="#">Real Estate in California</a>
+                            <a class="placeLink" href="#">Real Estate in Colorado</a>
+                            <a class="placeLink" href="#">Real Estate in Connecticut</a>
+                            <a class="placeLink" href="#">Real Estate in Delaware</a>
+                        </div>
+                        <div class="col-md-6">
+                            <a class="placeLink" href="#">Real Estate in Florida</a>
+                            <a class="placeLink" href="#">Real Estate in Georgia</a>
+                            <a class="placeLink" href="#">Real Estate in Hawaii</a>
+                            <a class="placeLink" href="#">Real Estate in Idaho</a>
+                            <a class="placeLink" href="#">Real Estate in Illinois</a>
+                            <a class="placeLink" href="#">Real Estate in Indiana</a>
+                            <a class="placeLink" href="#">Real Estate in Iowa</a>
+                            <a class="placeLink" href="#">Real Estate in Kansas</a>
+                        </div>
+                    </div>
+                    <div class="text-left text-md-right">
+                        <a class="squareBtn" href="#">Brows All Together <i
+                                class="fas fa-angle-right"></i></a>
+                    </div>
+                </div>
+                <div class="item">
+                    <a class="label active" href="#">Popular Searches</a>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a class="placeLink" href="#">Real Estate in Alaska</a>
+                            <a class="placeLink" href="#">Real Estate in Alabama</a>
+                            <a class="placeLink" href="#">Real Estate in Arizona</a>
+                            <a class="placeLink" href="#">Real Estate in Arkansas</a>
+                            <a class="placeLink" href="#">Real Estate in California</a>
+                            <a class="placeLink" href="#">Real Estate in Colorado</a>
+                            <a class="placeLink" href="#">Real Estate in Connecticut</a>
+                            <a class="placeLink" href="#">Real Estate in Delaware</a>
+                        </div>
+                        <div class="col-md-6">
+                            <a class="placeLink" href="#">Real Estate in Florida</a>
+                            <a class="placeLink" href="#">Real Estate in Georgia</a>
+                            <a class="placeLink" href="#">Real Estate in Hawaii</a>
+                            <a class="placeLink" href="#">Real Estate in Idaho</a>
+                            <a class="placeLink" href="#">Real Estate in Illinois</a>
+                            <a class="placeLink" href="#">Real Estate in Indiana</a>
+                            <a class="placeLink" href="#">Real Estate in Iowa</a>
+                            <a class="placeLink" href="#">Real Estate in Kansas</a>
+                        </div>
+                    </div>
+                    <div class="text-left text-md-right">
+                        <a class="squareBtn" href="#">Brows All Together <i
+                                class="fas fa-angle-right"></i></a>
                     </div>
                 </div>
             </div>
+        </div>
+        <!-- Owl Carousel end -->
         </div>
     </section>
 

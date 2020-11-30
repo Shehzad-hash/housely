@@ -20,13 +20,13 @@ body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 100vh;
+    min-height: 80vh;
     color: var(--secondaryCOlor);
 }
 
 .heroSection .darkOverlay {
     background-color: rgba(20, 97, 210, 0.2);
-    min-height: 100vh;
+    min-height: 80vh;
 
 }
 
@@ -40,6 +40,8 @@ body {
 
 .heroSection .navbar-brand {
     color: var(--secondaryCOlor);
+    font-family: 'Lobster', cursive;
+    font-size: 1.7em;
 }
 
 .heroSection .navbar-light .nav-link:hover {
@@ -71,7 +73,7 @@ body {
 }
 
 .mainHeading {
-    font-size: 2em;
+    font-family: 'Lobster', cursive;
 }
 
 .mainText {
@@ -112,7 +114,9 @@ body {
 .subText {
     font-size: 0.9em;
 }
-
+.heroSection .heroContent .subText {
+    font-family: 'Lobster', cursive;
+}
 .heroSection .popularLink {
     background-color: rgba(255, 255, 255, 0.4);
     color: var(--secondaryCOlor);
@@ -124,8 +128,11 @@ body {
     border-radius: 0.2em;
     text-decoration: none;
     margin: 1.5em 1em 1em 0;
+    transition: 200ms ease-in-out;
 }
-
+.heroSection .popularLink:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+}
 /* Option Section */
 .optionSection {
     padding: 2em 0.5em;
@@ -158,6 +165,7 @@ body {
 .optionCard .cardHeading {
     font-size: 1.2em;
     color: var(--primaryColor);
+    font-family: 'Lobster', cursive;
 }
 
 .optionCard .subText {
@@ -185,23 +193,58 @@ body {
 .optionCard .contentSide {
     width: 50%;
 }
-
+.videoImg {
+    position: relative;
+}
+.optionSection .videoIcon {
+    display: flex;
+    height: 3.8em;
+    width: 3.8em;
+    border-radius: 50%;
+    background-color: rgba(17, 107, 220, 0.6);
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 20px;
+    bottom: 30px;
+}
+.optionSection .videoIcon i {
+    font-size: 1.8em;
+    color: var(--secondaryCOlor);
+}
 .optionCard .circleImg1 {
     position: absolute;
-    right: -16px;
-    top: -20px;
+    right: -12px;
+    top: -16px;
+    height: 1.8em;
+    width: 1.8em;
+    background-color: #116BEE;
+    border-radius: 50%;
 }
-
+.transsectionEffect{
+    animation: mymove 2s infinite;
+}
+@keyframes mymove {
+    50% {box-shadow: 0 0 10px #116BEE;}
+  }
 .optionCard .circleImg2 {
     position: absolute;
-    right: -16px;
-    bottom: -20px;
+    right: -8px;
+    bottom: -10px;
+    height: 1.5em;
+    width: 1.5em;
+    background-color: #116BEE;
+    border-radius: 50%;
 }
 
 .optionCard .circleImg3 {
     position: absolute;
-    left: -16px;
-    bottom: -20px;
+    left: -8px;
+    bottom: -6px;
+    height: 1em;
+    width: 1em;
+    background-color: #116BEE;
+    border-radius: 50%;
 }
 
 .optionSection .dotsImg {
@@ -238,7 +281,7 @@ body {
 }
 
 .getinTouch .subText {
-    color: var(--primaryColor);
+    color: var(--primaryColor) !important;
     margin-bottom: 0.8em;
     font-size: 0.8em;
 }
@@ -246,6 +289,7 @@ body {
 .getinHeading {
     font-size: 1.6em;
     color: black;
+    font-family: 'Lobster', cursive;
 }
 
 .getinTouch .getLeft {
@@ -286,6 +330,7 @@ body {
     margin-bottom: 0.7em;
     color: #414141;
     margin-top: 0.7em;
+    font-family: 'Lobster', cursive;
 }
 
 .houseCard .cardFooter {
@@ -311,41 +356,63 @@ body {
 }
 
 .moreOptions .mainText {
-    font-size: 1.1em;
+    font-size: 1.2em;
     margin-bottom: 0;
+    font-family: 'Lobster', cursive;
 }
 
 .locationCard {
     display: flex;
     justify-content: space-between;
+    height: 400px;
 }
 
 .cardsSection .cardItem {
     position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 1.7em;
+    border-radius: 20px;
 }
 
 .cardsSection .cardOverlay {
     position: absolute;
     background-color: rgba(130, 130, 130, 0.4);
-    height: calc(100% - 17px);
-    width: calc(100% - 13px);
-    border-radius: 17px;
-    top: 4px;
-    left: 7px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 200ms ease-in-out;
+    border-radius: 20px;
 }
-
+.cardsSection .cardItem:hover .cardOverlay {
+    background-color: rgba(20, 97, 210, 0.2);
+}
 .cardsSection .location {
-    position: absolute;
-    top: 26px;
-    left: 32px;
+    position: relative;
 }
 
 .location i {
     margin-right: 0.3em;
 }
-
+.bigCard {
+    width: 24%;
+    height: 100%;
+}
+.smallCards {
+    width: 24%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.smallCard {
+    width: 100%;
+    height: 49%;
+}
 .location a {
     color: var(--secondaryCOlor);
+    font-size: 0.9em;
 }
 
 .location .mainHeading {
@@ -354,12 +421,30 @@ body {
 
 .locationCard .exploreMore {
     position: absolute;
-    bottom: 30px;
+    bottom: 20px;
     left: 40px;
     color: var(--secondaryCOlor);
     font-size: 0.9em;
 }
-
+.owl-carousel {
+    position: relative;
+}
+.owl-carousel .owl-prev span {
+    display: none;
+}
+.owl-carousel .owl-next span {
+    position: absolute;
+    font-size: 2.3em;
+    right: 20px;
+    top: 80px;
+    height: 1em;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    width: 1em;
+    color: gray !important;
+    text-align: center;
+}
 /* News Section */
 .newsSection {
     padding: 2.7em 0.5em;
@@ -397,13 +482,17 @@ body {
 .linksSection .label.active {
     border-bottom: 2px solid #116BEE;
     padding-bottom: 1.2em;
+    margin-bottom: -2px;
 }
 
 .linksSection .labels {
     border-bottom: 1px solid rgba(255, 255, 255, 0.4);
-    padding-bottom: 1.2em;
+    
 }
-
+.linksSection .labels .label {
+    color: var(--secondaryCOlor) !important;
+    text-decoration: none;
+}
 .linksSection .placeLink {
     display: block;
     text-decoration: none;
@@ -415,7 +504,22 @@ body {
 .linksSection .squareBtn {
     font-size: 0.8em;
 }
-
+#owl-carousel .label {
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 1.5em;
+    padding-bottom: 0.5em;
+    text-decoration: none;
+}
+#owl-carousel {
+    display: none;
+}
+#owl-carousel .row {
+    flex-wrap: nowrap;
+}
+#owl-carousel .owl-next span {
+    display: none;
+}
 /* Page Footer */
 .pageFooter {
     padding: 1em 0.5em;
@@ -424,8 +528,9 @@ body {
 
 .pageFooter .footerLogo {
     color: var(--secondaryCOlor);
-    font-size: 1.2em;
+    font-size: 1.7em;
     text-decoration: none;
+    font-family: 'Lobster', cursive;
 }
 
 .pageFooter .footerLink {
@@ -478,7 +583,8 @@ body {
 /* Media Queries */
 @media (max-width: 768px) {
     .locationCard {
-        flex-wrap: wrap;
+        display: unset;
+        height: unset;
     }
 
     .getinTouch .getLeft,
@@ -509,5 +615,62 @@ body {
         height: 55px;
         top: 12px;
         right: 5px;
+    }
+    .cardsSection .cardItem {
+        height: 240px;
+    }
+    .bigCard{
+        width: 100%;
+    }
+    .smallCards {
+        width: 100%;
+        display: unset;
+    }
+    .cardsSection .cardItem {
+        margin-bottom: 1em;
+    }
+    .heroSection .popularLink {
+        margin-top: 0;
+    }
+    .heroSection .heroContent .subText {
+        margin-bottom: 1em;
+    }
+    .linksSection .placeLink {
+        font-size: 0.8em;
+    }
+    #owl-carousel {
+        display: block;
+    } 
+    .hideTab {
+        display: none;
+    }
+    .heroSection .darkOverlay {
+        padding-bottom: 1em;
+    }
+}
+@media (max-width: 575px){
+
+    .myCountainer {
+        padding: 0;
+    }
+    .myCountainer .navbar-nav {
+        background-color: white;
+        padding: 1em 0;
+    }
+    .myCountainer .radiusBtn.transparentBtn {
+        color: black;
+        border: 2px solid black;
+    }
+    .myCountainer .navbar-light .nav-link {
+        color: black;
+    }
+    .myCountainer .navbar-brand {
+        padding-left: 0.7em;
+    }
+    .myCountainer .navbar-toggler {
+        margin: 0.5em;
+    }
+    .myCountainer .navbar {
+        padding: 0;
     }
 }
